@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "fancyblocks:block/gold_stone_bricks",
+    "side": "fancyblocks:block/gold_stone_bricks",
+    "top": "fancyblocks:block/gold_stone_bricks"
+  }
+}

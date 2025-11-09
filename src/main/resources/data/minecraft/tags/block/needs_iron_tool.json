@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "fancyblocks:gold_stone_bricks",
+    "fancyblocks:gold_polished_blackstone_bricks",
+    "fancyblocks:gold_end_stone_bricks",
+    "fancyblocks:gold_deepslate_bricks",
+    "fancyblocks:gold_deepslate_tiles",
+    "fancyblocks:gold_tuff_bricks",
+    "fancyblocks:gold_quartz_bricks",
+    "fancyblocks:gold_nether_bricks",
+    "fancyblocks:gold_prismarine_bricks"
+  ]
+}

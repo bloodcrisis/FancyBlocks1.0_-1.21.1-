@@ -12,7 +12,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagProvider extends BlockTagsProvider {
-    public ModBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, String modId, @Nullable ExistingFileHelper existingFileHelper) {
+    public ModBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, FancyBlocks.MODID, existingFileHelper);
     }
 
@@ -20,8 +20,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.GOLD_STONE_BRICKS.get())
-                .add(ModBlocks.GOLD_STONE_BRICK_STAIRS.get())
-                .add(ModBlocks.GOLD_STONE_BRICK_WALL.get())
                 .add(ModBlocks.GOLD_END_STONE_BRICKS.get())
                 .add(ModBlocks.GOLD_POLISHED_BLACKSTONE_BRICKS.get())
                 .add(ModBlocks.GOLD_PRISMARINE_BRICKS.get())
@@ -29,12 +27,135 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.GOLD_DEEPSLATE_BRICKS.get())
                 .add(ModBlocks.GOLD_DEEPSLATE_TILES.get())
                 .add(ModBlocks.GOLD_TUFF_BRICKS.get())
-                .add(ModBlocks.GOLD_NETHER_BRICKS.get());
+                .add(ModBlocks.GOLD_NETHER_BRICKS.get())
 
-        tag(BlockTags.WALLS)
-                .add(ModBlocks.GOLD_STONE_BRICK_WALL.get());
+                .add(ModBlocks.GOLD_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_DEEPSLATE_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_DEEPSLATE_TILE_STAIRS.get())
+                .add(ModBlocks.GOLD_END_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_TUFF_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_PRISMARINE_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_NETHER_BRICK_STAIRS.get())
+
+                .add(ModBlocks.GOLD_STONE_BRICK_WALL.get())
+                .add(ModBlocks.GOLD_DEEPSLATE_BRICK_WALL.get())
+                .add(ModBlocks.GOLD_DEEPSLATE_TILE_WALL.get())
+                .add(ModBlocks.GOLD_END_STONE_BRICK_WALL.get())
+                .add(ModBlocks.GOLD_POLISHED_BLACKSTONE_BRICK_WALL.get())
+                .add(ModBlocks.GOLD_TUFF_BRICK_WALL.get())
+                .add(ModBlocks.GOLD_NETHER_BRICK_WALL.get())
+        
+                .add(ModBlocks.EMERALD_STONE_BRICKS.get())
+                .add(ModBlocks.EMERALD_END_STONE_BRICKS.get())
+                .add(ModBlocks.EMERALD_POLISHED_BLACKSTONE_BRICKS.get())
+                .add(ModBlocks.EMERALD_PRISMARINE_BRICKS.get())
+                .add(ModBlocks.EMERALD_QUARTZ_BRICKS.get())
+                .add(ModBlocks.EMERALD_DEEPSLATE_BRICKS.get())
+                .add(ModBlocks.EMERALD_DEEPSLATE_TILES.get())
+                .add(ModBlocks.EMERALD_TUFF_BRICKS.get())
+                .add(ModBlocks.EMERALD_NETHER_BRICKS.get())
+
+                .add(ModBlocks.EMERALD_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_DEEPSLATE_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_DEEPSLATE_TILE_STAIRS.get())
+                .add(ModBlocks.EMERALD_END_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_TUFF_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_PRISMARINE_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_NETHER_BRICK_STAIRS.get())
+
+                .add(ModBlocks.EMERALD_STONE_BRICK_WALL.get())
+                .add(ModBlocks.EMERALD_DEEPSLATE_BRICK_WALL.get())
+                .add(ModBlocks.EMERALD_DEEPSLATE_TILE_WALL.get())
+                .add(ModBlocks.EMERALD_END_STONE_BRICK_WALL.get())
+                .add(ModBlocks.EMERALD_POLISHED_BLACKSTONE_BRICK_WALL.get())
+                .add(ModBlocks.EMERALD_TUFF_BRICK_WALL.get())
+                .add(ModBlocks.EMERALD_NETHER_BRICK_WALL.get())
+        
+        
+                .add(ModBlocks.DIAMOND_STONE_BRICKS.get())
+                .add(ModBlocks.DIAMOND_END_STONE_BRICKS.get())
+                .add(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICKS.get())
+                .add(ModBlocks.DIAMOND_PRISMARINE_BRICKS.get())
+                .add(ModBlocks.DIAMOND_QUARTZ_BRICKS.get())
+                .add(ModBlocks.DIAMOND_DEEPSLATE_BRICKS.get())
+                .add(ModBlocks.DIAMOND_DEEPSLATE_TILES.get())
+                .add(ModBlocks.DIAMOND_TUFF_BRICKS.get())
+                .add(ModBlocks.DIAMOND_NETHER_BRICKS.get())
+
+                .add(ModBlocks.DIAMOND_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_DEEPSLATE_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_DEEPSLATE_TILE_STAIRS.get())
+                .add(ModBlocks.DIAMOND_END_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_TUFF_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_PRISMARINE_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_NETHER_BRICK_STAIRS.get())
+
+                .add(ModBlocks.DIAMOND_STONE_BRICK_WALL.get())
+                .add(ModBlocks.DIAMOND_DEEPSLATE_BRICK_WALL.get())
+                .add(ModBlocks.DIAMOND_DEEPSLATE_TILE_WALL.get())
+                .add(ModBlocks.DIAMOND_END_STONE_BRICK_WALL.get())
+                .add(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_WALL.get())
+                .add(ModBlocks.DIAMOND_TUFF_BRICK_WALL.get())
+                .add(ModBlocks.DIAMOND_NETHER_BRICK_WALL.get());
+        
+        
+        
 
         tag(BlockTags.STAIRS)
-                .add(ModBlocks.GOLD_STONE_BRICK_STAIRS.get());
+                .add(ModBlocks.GOLD_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_DEEPSLATE_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_DEEPSLATE_TILE_STAIRS.get())
+                .add(ModBlocks.GOLD_END_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_TUFF_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_PRISMARINE_BRICK_STAIRS.get())
+                .add(ModBlocks.GOLD_NETHER_BRICK_STAIRS.get())
+
+                .add(ModBlocks.EMERALD_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_DEEPSLATE_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_DEEPSLATE_TILE_STAIRS.get())
+                .add(ModBlocks.EMERALD_END_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_TUFF_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_PRISMARINE_BRICK_STAIRS.get())
+                .add(ModBlocks.EMERALD_NETHER_BRICK_STAIRS.get())
+        
+                .add(ModBlocks.DIAMOND_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_DEEPSLATE_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_DEEPSLATE_TILE_STAIRS.get())
+                .add(ModBlocks.DIAMOND_END_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_TUFF_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_PRISMARINE_BRICK_STAIRS.get())
+                .add(ModBlocks.DIAMOND_NETHER_BRICK_STAIRS.get());
+
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.GOLD_STONE_BRICK_WALL.get())
+                .add(ModBlocks.GOLD_DEEPSLATE_BRICK_WALL.get())
+                .add(ModBlocks.GOLD_DEEPSLATE_TILE_WALL.get())
+                .add(ModBlocks.GOLD_END_STONE_BRICK_WALL.get())
+                .add(ModBlocks.GOLD_POLISHED_BLACKSTONE_BRICK_WALL.get())
+                .add(ModBlocks.GOLD_TUFF_BRICK_WALL.get())
+                .add(ModBlocks.GOLD_NETHER_BRICK_WALL.get())
+                
+                .add(ModBlocks.EMERALD_STONE_BRICK_WALL.get())
+                .add(ModBlocks.EMERALD_DEEPSLATE_BRICK_WALL.get())
+                .add(ModBlocks.EMERALD_DEEPSLATE_TILE_WALL.get())
+                .add(ModBlocks.EMERALD_END_STONE_BRICK_WALL.get())
+                .add(ModBlocks.EMERALD_POLISHED_BLACKSTONE_BRICK_WALL.get())
+                .add(ModBlocks.EMERALD_TUFF_BRICK_WALL.get())
+                .add(ModBlocks.EMERALD_NETHER_BRICK_WALL.get())
+                
+                .add(ModBlocks.DIAMOND_STONE_BRICK_WALL.get())
+                .add(ModBlocks.DIAMOND_DEEPSLATE_BRICK_WALL.get())
+                .add(ModBlocks.DIAMOND_DEEPSLATE_TILE_WALL.get())
+                .add(ModBlocks.DIAMOND_END_STONE_BRICK_WALL.get())
+                .add(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_WALL.get())
+                .add(ModBlocks.DIAMOND_TUFF_BRICK_WALL.get())
+                .add(ModBlocks.DIAMOND_NETHER_BRICK_WALL.get());
+
     }
 }

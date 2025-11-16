@@ -19,7 +19,10 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> GOLD_STONE_BRICKS = registerBlock("gold_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
-    
+
+    public static final DeferredBlock<Block> GOLD_CHISELED_STONE_BRICKS = registerBlock("gold_chiseled_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_STONE_BRICKS)));
+
     public static final DeferredBlock<StairBlock> GOLD_STONE_BRICK_STAIRS = registerBlock("gold_stone_brick_stairs",
             () -> new StairBlock(ModBlocks.GOLD_STONE_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
@@ -27,7 +30,7 @@ public class ModBlocks {
     public static final DeferredBlock<WallBlock> GOLD_STONE_BRICK_WALL = registerBlock("gold_stone_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL)));
 
-    
+
 
     public static final DeferredBlock<Block> GOLD_POLISHED_BLACKSTONE_BRICKS = registerBlock("gold_polished_blackstone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)));
@@ -79,6 +82,12 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GOLD_TUFF_BRICKS = registerBlock("gold_tuff_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF_BRICKS)));
 
+    public static final DeferredBlock<Block> GOLD_CHISELED_TUFF = registerBlock("gold_chiseled_tuff",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_TUFF)));
+
+    public static final DeferredBlock<Block> GOLD_CHISELED_TUFF_BRICKS = registerBlock("gold_chiseled_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_TUFF_BRICKS)));
+
     public static final DeferredBlock<StairBlock> GOLD_TUFF_BRICK_STAIRS = registerBlock("gold_tuff_brick_stairs",
             () -> new StairBlock(ModBlocks.GOLD_TUFF_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF_BRICKS)));
@@ -90,7 +99,10 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> GOLD_QUARTZ_BRICKS = registerBlock("gold_quartz_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BRICKS)));
-    
+
+    public static final DeferredBlock<Block> GOLD_CHISELED_QUARTZ = registerBlock("gold_chiseled_quartz",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_QUARTZ_BLOCK)));
+
     
 
     public static final DeferredBlock<Block> GOLD_PRISMARINE_BRICKS = registerBlock("gold_prismarine_bricks",
@@ -111,6 +123,12 @@ public class ModBlocks {
 
     public static final DeferredBlock<WallBlock> GOLD_NETHER_BRICK_WALL = registerBlock("gold_nether_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICK_WALL)));
+
+    public static final DeferredBlock<Block> GOLD_CHISELED_SANDSTONE = registerBlock("gold_chiseled_sandstone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_SANDSTONE)));
+
+    public static final DeferredBlock<Block> GOLD_CHISELED_RED_SANDSTONE = registerBlock("gold_chiseled_red_sandstone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_RED_SANDSTONE)));
 
 
 

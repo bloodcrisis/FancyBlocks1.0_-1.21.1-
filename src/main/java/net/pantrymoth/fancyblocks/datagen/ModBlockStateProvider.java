@@ -8,6 +8,8 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.pantrymoth.fancyblocks.FancyBlocks;
 import net.pantrymoth.fancyblocks.block.ModBlocks;
 
+import java.awt.*;
+
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, FancyBlocks.MODID, exFileHelper);
@@ -16,6 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.GOLD_STONE_BRICKS);
+        blockWithItem(ModBlocks.GOLD_CHISELED_STONE_BRICKS);
         stairsBlock(ModBlocks.GOLD_STONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.GOLD_STONE_BRICKS.get()));
         blockItem(ModBlocks.GOLD_STONE_BRICK_STAIRS);
         wallBlock(ModBlocks.GOLD_STONE_BRICK_WALL.get(), blockTexture(ModBlocks.GOLD_STONE_BRICKS.get()));
@@ -111,18 +114,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.DIAMOND_END_STONE_BRICK_STAIRS);
         wallBlock(ModBlocks.DIAMOND_END_STONE_BRICK_WALL.get(), blockTexture(ModBlocks.DIAMOND_END_STONE_BRICKS.get()));
 
-
         blockWithItem(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICKS);
         stairsBlock(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICKS.get()));
         blockItem(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_STAIRS);
         wallBlock(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_WALL.get(), blockTexture(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICKS.get()));
 
-
         blockWithItem(ModBlocks.DIAMOND_DEEPSLATE_BRICKS);
         stairsBlock(ModBlocks.DIAMOND_DEEPSLATE_BRICK_STAIRS.get(), blockTexture(ModBlocks.DIAMOND_DEEPSLATE_BRICKS.get()));
         blockItem(ModBlocks.DIAMOND_DEEPSLATE_BRICK_STAIRS);
         wallBlock(ModBlocks.DIAMOND_DEEPSLATE_BRICK_WALL.get(), blockTexture(ModBlocks.DIAMOND_DEEPSLATE_BRICKS.get()));
-
 
         blockWithItem(ModBlocks.DIAMOND_DEEPSLATE_TILES);
         stairsBlock(ModBlocks.DIAMOND_DEEPSLATE_TILE_STAIRS.get(), blockTexture(ModBlocks.DIAMOND_DEEPSLATE_TILES.get()));
@@ -135,7 +135,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlock(ModBlocks.DIAMOND_TUFF_BRICK_STAIRS.get(), blockTexture(ModBlocks.DIAMOND_TUFF_BRICKS.get()));
         blockItem(ModBlocks.DIAMOND_TUFF_BRICK_STAIRS);
         wallBlock(ModBlocks.DIAMOND_TUFF_BRICK_WALL.get(), blockTexture(ModBlocks.DIAMOND_TUFF_BRICKS.get()));
-
 
         blockWithItem(ModBlocks.DIAMOND_NETHER_BRICKS);
         stairsBlock(ModBlocks.DIAMOND_NETHER_BRICK_STAIRS.get(), blockTexture(ModBlocks.DIAMOND_NETHER_BRICKS.get()));
@@ -151,6 +150,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
+
 
     private void blockItem(DeferredBlock<?> deferredBlock) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("fancyblocks:block/" + deferredBlock.getId().getPath()));

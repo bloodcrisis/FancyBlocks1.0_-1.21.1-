@@ -20,6 +20,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.GOLD_STONE_BRICKS.get())
+                .add(ModBlocks.GOLD_CHISELED_STONE_BRICKS.get())
                 .add(ModBlocks.GOLD_END_STONE_BRICKS.get())
                 .add(ModBlocks.GOLD_POLISHED_BLACKSTONE_BRICKS.get())
                 .add(ModBlocks.GOLD_PRISMARINE_BRICKS.get())
@@ -27,7 +28,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.GOLD_DEEPSLATE_BRICKS.get())
                 .add(ModBlocks.GOLD_DEEPSLATE_TILES.get())
                 .add(ModBlocks.GOLD_TUFF_BRICKS.get())
+                .add(ModBlocks.GOLD_CHISELED_TUFF.get())
+                .add(ModBlocks.GOLD_CHISELED_TUFF_BRICKS.get())
                 .add(ModBlocks.GOLD_NETHER_BRICKS.get())
+                .add(ModBlocks.GOLD_CHISELED_SANDSTONE.get())
+                .add(ModBlocks.GOLD_CHISELED_RED_SANDSTONE.get())
 
                 .add(ModBlocks.GOLD_STONE_BRICK_STAIRS.get())
                 .add(ModBlocks.GOLD_DEEPSLATE_BRICK_STAIRS.get())

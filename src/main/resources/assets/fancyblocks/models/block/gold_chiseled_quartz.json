@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fancyblocks:block/gold_chiseled_quartz_top",
+    "side": "fancyblocks:block/gold_chiseled_quartz"
+  }
+}

@@ -30,17 +30,23 @@ public class ModMaps {
                     Map.entry(Blocks.DEEPSLATE_TILE_WALL, ModBlocks.GOLD_DEEPSLATE_TILE_WALL.get()),
 
                     Map.entry(Blocks.TUFF_BRICKS, ModBlocks.GOLD_TUFF_BRICKS.get()),
+                    Map.entry(Blocks.CHISELED_TUFF, ModBlocks.GOLD_CHISELED_TUFF.get()),
+                    Map.entry(Blocks.CHISELED_TUFF_BRICKS, ModBlocks.GOLD_CHISELED_TUFF_BRICKS.get()),
                     Map.entry(Blocks.TUFF_BRICK_STAIRS, ModBlocks.GOLD_TUFF_BRICK_STAIRS.get()),
                     Map.entry(Blocks.TUFF_BRICK_WALL, ModBlocks.GOLD_TUFF_BRICK_WALL.get()),
 
                     Map.entry(Blocks.QUARTZ_BRICKS, ModBlocks.GOLD_QUARTZ_BRICKS.get()),
+                    Map.entry(Blocks.CHISELED_QUARTZ_BLOCK, ModBlocks.GOLD_CHISELED_QUARTZ.get()),
 
                     Map.entry(Blocks.NETHER_BRICKS, ModBlocks.GOLD_NETHER_BRICKS.get()),
                     Map.entry(Blocks.NETHER_BRICK_STAIRS, ModBlocks.GOLD_NETHER_BRICK_STAIRS.get()),
                     Map.entry(Blocks.NETHER_BRICK_WALL, ModBlocks.GOLD_NETHER_BRICK_WALL.get()),
 
                     Map.entry(Blocks.PRISMARINE_BRICKS, ModBlocks.GOLD_PRISMARINE_BRICKS.get()),
-                    Map.entry(Blocks.PRISMARINE_BRICK_STAIRS, ModBlocks.GOLD_PRISMARINE_BRICK_STAIRS.get())
+                    Map.entry(Blocks.PRISMARINE_BRICK_STAIRS, ModBlocks.GOLD_PRISMARINE_BRICK_STAIRS.get()),
+
+                    Map.entry(Blocks.CHISELED_SANDSTONE, ModBlocks.GOLD_CHISELED_SANDSTONE.get()),
+                    Map.entry(Blocks.CHISELED_RED_SANDSTONE, ModBlocks.GOLD_CHISELED_RED_SANDSTONE.get())
                     );
 
     public static final Map<Block, Block> EMERALD_MAP =

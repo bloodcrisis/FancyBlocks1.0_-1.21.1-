@@ -52,6 +52,7 @@ public class FancyBlocks {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.GOLD_STONE_BRICKS);
+            event.accept(ModBlocks.GOLD_CHISELED_STONE_BRICKS);
             event.accept(ModBlocks.GOLD_STONE_BRICK_STAIRS);
             event.accept(ModBlocks.GOLD_STONE_BRICK_WALL);
 
@@ -72,10 +73,13 @@ public class FancyBlocks {
             event.accept(ModBlocks.GOLD_DEEPSLATE_TILE_WALL);
 
             event.accept(ModBlocks.GOLD_TUFF_BRICKS);
+            event.accept(ModBlocks.GOLD_CHISELED_TUFF);
+            event.accept(ModBlocks.GOLD_CHISELED_TUFF_BRICKS);
             event.accept(ModBlocks.GOLD_TUFF_BRICK_STAIRS);
             event.accept(ModBlocks.GOLD_TUFF_BRICK_WALL);
 
             event.accept(ModBlocks.GOLD_QUARTZ_BRICKS);
+            event.accept(ModBlocks.GOLD_CHISELED_QUARTZ);
 
             event.accept(ModBlocks.GOLD_NETHER_BRICKS);
             event.accept(ModBlocks.GOLD_NETHER_BRICK_STAIRS);
@@ -84,11 +88,14 @@ public class FancyBlocks {
             event.accept(ModBlocks.GOLD_PRISMARINE_BRICKS);
             event.accept(ModBlocks.GOLD_PRISMARINE_BRICK_STAIRS);
 
+            event.accept(ModBlocks.GOLD_CHISELED_SANDSTONE);
+            event.accept(ModBlocks.GOLD_CHISELED_RED_SANDSTONE);
+
+
+
             event.accept(ModBlocks.EMERALD_STONE_BRICKS);
             event.accept(ModBlocks.EMERALD_STONE_BRICK_STAIRS);
             event.accept(ModBlocks.EMERALD_STONE_BRICK_WALL);
-
-
 
             event.accept(ModBlocks.EMERALD_POLISHED_BLACKSTONE_BRICKS);
             event.accept(ModBlocks.EMERALD_POLISHED_BLACKSTONE_BRICK_STAIRS);

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fancyblocks:block/emerald_chiseled_tuff_bricks_top",
+    "side": "fancyblocks:block/emerald_chiseled_tuff_bricks"
+  }
+}

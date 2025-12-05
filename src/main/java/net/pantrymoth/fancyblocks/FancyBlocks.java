@@ -88,12 +88,57 @@ public class FancyBlocks {
             event.accept(ModBlocks.GOLD_PRISMARINE_BRICKS);
             event.accept(ModBlocks.GOLD_PRISMARINE_BRICK_STAIRS);
 
+            event.accept(ModBlocks.GOLD_PURPUR_BLOCK);
+            event.accept(ModBlocks.GOLD_PURPUR_STAIRS);
+
             event.accept(ModBlocks.GOLD_CHISELED_SANDSTONE);
             event.accept(ModBlocks.GOLD_CHISELED_RED_SANDSTONE);
 
+            event.accept(ModBlocks.DIAMOND_STONE_BRICKS);
+            event.accept(ModBlocks.DIAMOND_CHISELED_STONE_BRICKS);
+            event.accept(ModBlocks.DIAMOND_STONE_BRICK_STAIRS);
+            event.accept(ModBlocks.DIAMOND_STONE_BRICK_WALL);
 
+            event.accept(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICKS);
+            event.accept(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_STAIRS);
+            event.accept(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_WALL);
+
+            event.accept(ModBlocks.DIAMOND_END_STONE_BRICKS);
+            event.accept(ModBlocks.DIAMOND_END_STONE_BRICK_STAIRS);
+            event.accept(ModBlocks.DIAMOND_END_STONE_BRICK_WALL);
+
+            event.accept(ModBlocks.DIAMOND_DEEPSLATE_BRICKS);
+            event.accept(ModBlocks.DIAMOND_DEEPSLATE_BRICK_STAIRS);
+            event.accept(ModBlocks.DIAMOND_DEEPSLATE_BRICK_WALL);
+
+            event.accept(ModBlocks.DIAMOND_DEEPSLATE_TILES);
+            event.accept(ModBlocks.DIAMOND_DEEPSLATE_TILE_STAIRS);
+            event.accept(ModBlocks.DIAMOND_DEEPSLATE_TILE_WALL);
+
+            event.accept(ModBlocks.DIAMOND_TUFF_BRICKS);
+            event.accept(ModBlocks.DIAMOND_CHISELED_TUFF);
+            event.accept(ModBlocks.DIAMOND_CHISELED_TUFF_BRICKS);
+            event.accept(ModBlocks.DIAMOND_TUFF_BRICK_STAIRS);
+            event.accept(ModBlocks.DIAMOND_TUFF_BRICK_WALL);
+
+            event.accept(ModBlocks.DIAMOND_QUARTZ_BRICKS);
+            event.accept(ModBlocks.DIAMOND_CHISELED_QUARTZ);
+
+            event.accept(ModBlocks.DIAMOND_NETHER_BRICKS);
+            event.accept(ModBlocks.DIAMOND_NETHER_BRICK_STAIRS);
+            event.accept(ModBlocks.DIAMOND_NETHER_BRICK_WALL);
+
+            event.accept(ModBlocks.DIAMOND_PRISMARINE_BRICKS);
+            event.accept(ModBlocks.DIAMOND_PRISMARINE_BRICK_STAIRS);
+
+            event.accept(ModBlocks.DIAMOND_PURPUR_BLOCK);
+            event.accept(ModBlocks.DIAMOND_PURPUR_STAIRS);
+
+            event.accept(ModBlocks.DIAMOND_CHISELED_SANDSTONE);
+            event.accept(ModBlocks.DIAMOND_CHISELED_RED_SANDSTONE);
 
             event.accept(ModBlocks.EMERALD_STONE_BRICKS);
+            event.accept(ModBlocks.EMERALD_CHISELED_STONE_BRICKS);
             event.accept(ModBlocks.EMERALD_STONE_BRICK_STAIRS);
             event.accept(ModBlocks.EMERALD_STONE_BRICK_WALL);
 
@@ -114,10 +159,13 @@ public class FancyBlocks {
             event.accept(ModBlocks.EMERALD_DEEPSLATE_TILE_WALL);
 
             event.accept(ModBlocks.EMERALD_TUFF_BRICKS);
+            event.accept(ModBlocks.EMERALD_CHISELED_TUFF);
+            event.accept(ModBlocks.EMERALD_CHISELED_TUFF_BRICKS);
             event.accept(ModBlocks.EMERALD_TUFF_BRICK_STAIRS);
             event.accept(ModBlocks.EMERALD_TUFF_BRICK_WALL);
 
             event.accept(ModBlocks.EMERALD_QUARTZ_BRICKS);
+            event.accept(ModBlocks.EMERALD_CHISELED_QUARTZ);
 
             event.accept(ModBlocks.EMERALD_NETHER_BRICKS);
             event.accept(ModBlocks.EMERALD_NETHER_BRICK_STAIRS);
@@ -125,41 +173,16 @@ public class FancyBlocks {
 
             event.accept(ModBlocks.EMERALD_PRISMARINE_BRICKS);
             event.accept(ModBlocks.EMERALD_PRISMARINE_BRICK_STAIRS);
+
+            event.accept(ModBlocks.EMERALD_PURPUR_BLOCK);
+            event.accept(ModBlocks.EMERALD_PURPUR_STAIRS);
+
+            event.accept(ModBlocks.EMERALD_CHISELED_SANDSTONE);
+            event.accept(ModBlocks.EMERALD_CHISELED_RED_SANDSTONE);
+
+
+
             
-            event.accept(ModBlocks.DIAMOND_STONE_BRICKS);
-            event.accept(ModBlocks.DIAMOND_STONE_BRICK_STAIRS);
-            event.accept(ModBlocks.DIAMOND_STONE_BRICK_WALL);
-
-
-
-            event.accept(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICKS);
-            event.accept(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_STAIRS);
-            event.accept(ModBlocks.DIAMOND_POLISHED_BLACKSTONE_BRICK_WALL);
-
-            event.accept(ModBlocks.DIAMOND_END_STONE_BRICKS);
-            event.accept(ModBlocks.DIAMOND_END_STONE_BRICK_STAIRS);
-            event.accept(ModBlocks.DIAMOND_END_STONE_BRICK_WALL);
-
-            event.accept(ModBlocks.DIAMOND_DEEPSLATE_BRICKS);
-            event.accept(ModBlocks.DIAMOND_DEEPSLATE_BRICK_STAIRS);
-            event.accept(ModBlocks.DIAMOND_DEEPSLATE_BRICK_WALL);
-
-            event.accept(ModBlocks.DIAMOND_DEEPSLATE_TILES);
-            event.accept(ModBlocks.DIAMOND_DEEPSLATE_TILE_STAIRS);
-            event.accept(ModBlocks.DIAMOND_DEEPSLATE_TILE_WALL);
-
-            event.accept(ModBlocks.DIAMOND_TUFF_BRICKS);
-            event.accept(ModBlocks.DIAMOND_TUFF_BRICK_STAIRS);
-            event.accept(ModBlocks.DIAMOND_TUFF_BRICK_WALL);
-
-            event.accept(ModBlocks.DIAMOND_QUARTZ_BRICKS);
-
-            event.accept(ModBlocks.DIAMOND_NETHER_BRICKS);
-            event.accept(ModBlocks.DIAMOND_NETHER_BRICK_STAIRS);
-            event.accept(ModBlocks.DIAMOND_NETHER_BRICK_WALL);
-
-            event.accept(ModBlocks.DIAMOND_PRISMARINE_BRICKS);
-            event.accept(ModBlocks.DIAMOND_PRISMARINE_BRICK_STAIRS);
         }
     }
 
